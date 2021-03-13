@@ -1,0 +1,78 @@
+h1 {
+  color: white;
+  text-align: center;
+}
+h3 {
+  color: #cc66ff;
+  text-align: center;
+}
+
+body {
+  background-color: #222831;
+}
+
+.umova {
+  color: #66ffcc;
+}
+.info {
+  color: #cc33ff;
+}
+
+/* FIRST */
+.result1 {
+  color: #ffa64d;
+}
+/* SECOND */
+.result2 {
+  color: #ffa64d;
+}
+.numFormat {
+  color: #ff0000;
+}
+/* third */
+.result3 {
+  color: #ffa64d;
+}
+.array {
+  color: #ffa64d;
+}
+/*Four*/
+.im {
+  position: relative; left: 2%;
+  width: 600px;
+}
+/*SIX*/
+.cl_table {
+  background-color: #ffffff;
+  border: 1;
+  width: 800px;
+}
+
+#lastrow {
+  width: ;
+}
+
+/*SEVEN*/
+.num_final {
+  color: #00ff00;
+}
+.fofont-color {
+  color: #00ff00;
+}
+
+.el_matrix {
+  width: 50px;
+  text-align: center;
+  height: : 50px;
+  border: 2px solid #B25538;
+}
+
+.element {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  width: 50px;
+  text-align: center;
+  border: 2px solid #B25538;
+
+}
