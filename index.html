@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <h1><i>Lab 1</i></h1>
+      <hr color="yellow">
+    </div>
+
+    <div>
+      <h3><i>Завдання 1</i></h3>
+      <label class="umova"><b>Вкажіть кількість чисел Фібоначі:</b></label>
+      <input  type="number" placeholder="Enter number" id="number">
+      <button type="button" name="button1" onclick="inputNum()" >Show</button><br><br>
+      <p class="info" id="info1"><i>Вивід чисел: </i></p>
+      <p class="result1" id="result"><i></i></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 2</i></h3>
+      <label class="umova"><b>Вкажіть квартиру, до якої необхідно дістатися:</b></label>
+      <input  type="number" placeholder="Enter number" id="number1">
+      <button type="button" name="button2" onclick="takeFloor()" >Take result</button><br><br>
+      <p class="info" id="info2"><i>Інформація:</i></p>
+      <p class="result2" id="result1"></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 3</i></h3>
+      <label class="umova"><b>Вкажіть кількість стовпців матриці <i class="numFormat">N</i>:</b></label>
+      <input  type="number" placeholder="Enter number" id="number2">
+      <br>
+      <label class="umova"><b>Вкажіть кількість рядків матриці <i class="numFormat">M</i>:</b></label>
+      <input  type="number" placeholder="Enter number" id="number3">
+      <br>
+      <button type="button" name="button3" onclick="takeMatrix()" >Build matrix</button><br><br>
+      <p class="info" id="info3"><i>Матриця:</i></p>
+      <p class="result3" id="result2"></p>
+      <p class="info" id="info4"><i>Масив додатних чисел:</i></p>
+      <p class="info" id="info5"><i>Масив від'ємних чисел:</i></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 4</i></h3>
+      <img class="im" src="rozklad1.PNG" ><br><br>
+      <label class="umova"><b>Вкажіть день тижня:</b></label>
+      <select id="text1">
+        <option>Понеділок</option>
+        <option>Вівторок</option>
+        <option>Середа</option>
+        <option>Четвер</option>
+        <option>П'ятниця</option>
+        <option>Субота</option>
+      </select>
+      <br>
+      <label class="umova"><b>Вкажіть групи: </b></label>
+      <select id="text2">
+        <option>ІК-91</option>
+        <option>ІК-92</option>
+        <option>ІК-93</option>
+      </select>
+      <br>
+      <button type="button" name="button3" onclick="takeRozklad()" >Take result</button><br><br>
+      <p class="info" id="info6"><i>Розклад для вказаної групи в заданий день:</i></p>
+      <p class="result1" id="result3"></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 5</i></h3>
+      <label class="umova"><b>Введіть перше число <i class="numFormat">A</i>:</b></label>
+      <input  type="number" placeholder="Enter number" id="number4">
+      <br>
+      <label class="umova"><b>Введіть перше число <i class="numFormat">B</i>:</b></label>
+      <input  type="number" placeholder="Enter number" id="number5">
+      <br>
+      <button type="button" name="button4" onclick="funCalculate(1)" >+</button>
+      <button type="button" name="button4" onclick="funCalculate(2)" >-</button>
+      <button type="button" name="button4" onclick="funCalculate(3)" >/</button>
+      <button type="button" name="button4" onclick="funCalculate(4)" >*</button>
+      <p class="info" id="info7"><i>Рішення:</i></p>
+      <p class="result1" id="result4"></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 6</i></h3>
+      <label class="umova"><b>Ім'я товару:</b></label>
+      <input  type="text" placeholder="Enter tovar" id="text3">
+      <br>
+      <label class="umova"><b>Ціна за од. товару: </b></label>
+      <input  type="number" placeholder="Enter price" id="text4">
+      <br>
+      <label class="umova"><b>Кількість: </b></label>
+      <input  type="number" placeholder="Enter number" id="text5">
+      <br>
+      <button type="button" name="button3" onclick="addTovar()" >Add tovar</button>
+      <button type="button" name="button3" onclick="takeTable()" >Show table</button><br><br>
+      <div id="table"></div>
+      <p class="info" id="info6"><i></i></p>
+      <p class="result1" id="result3"></p>
+      <hr color="#cccccc">
+    </div>
+
+    <div>
+      <h3><i>Завдання 7</i></h3>
+      <label class="umova"><b>Вкажіть порядок матриці <i class="numFormat">N</i>:</b></label>
+      <input  type="number" placeholder="Enter number" id="number_f1">
+      <br>
+      <label class="umova"><b>Заповнення матриці:</b></label>
+      <button type="button" name="button_f" onclick="doMatrix()" >Вручну</button>
+      <button type="button" name="button_f" onclick="changeMatrix(2)" >Рандомно та транспонувати</button>
+      <p class="info" id="info_f"><i>Матриця(1):</i></p>
+      <p class="result3" id="result_fin1"></p>
+      <p class="info" id="info_f"><i>Транспонована матриця(2):</i></p>
+      <p class="result3" id="result_fin2"></p>
+      <p class="result3" id="result_fin3"></p>
+      <hr color="#cccccc">
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
